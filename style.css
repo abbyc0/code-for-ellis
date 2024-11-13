@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.f1 {
+    font-family: "Brygada 1918", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.f2 {
+    font-family: "Ibarra Real Nova", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.f3 {
+    font-family: "Alumni Sans", sans-serif;
+    font-weight: 350;
+    font-style: normal
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+}
+
+.roundImg {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+}
+
+body {
+    overflow: hidden;
+}
+
+.mainContainer {
+    max-width:750px;
+    height: 2000px;
+    margin:auto;
+    justify-content: flex-start;
+    
+    border-style: solid;
+    overflow: scroll;
+}
+
+.miniLine {
+    width: 40%;
+    border-style: dashed;
+}
+
+.slide {
+    width: 100%;
+    height: 100vh;
+    min-height: 500px;
+    border-style: solid;
+}
+
+/* SLIDE 0 INTRO SCREEN (Hi, I'm Abby...) */
+#slide0 .outer1 {
+    flex-direction: row;
+    margin: 20px;
+}
+
+#slide0 .inner1, #slide0 img {
+    margin: 20px;
+}
+
+#slide0 h1 {
+    font-size: 50px;
+    text-align: left;
+}
+
+#slide0 h2 {
+    margin: 10px 0px;
+    font-size: 35px;
+    text-align: left;
+    font-weight: 300;
+    font-style: italic;
+}
+
+/* ANIMATED SCROLL PROMPT (Scroll down to begin!) */
+
+#scrollReminder1 {
+    position: relative;
+    top: 10px;
+    transition: top 1.5s ease;
+}
+
+#scrollReminder1 h3 {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+#scrollReminder1 img {
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+}
+
+/* SLIDE 1 (big chunk of intro text) */
+#slide1 p {
+    margin: 20px 40px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* CORNER CONTACT INFO */
+
+.contactFloat {
+    position: sticky;
+    align-self: flex-end;
+    bottom: 0;
+    right: 0;
+    
+    border-style: outset;
+    border-width: 3px;
+}
+
+.contactFloat td {
+    padding: 5px 10px;
+    z-index: 10;
+    height: 45px;
+    
+    text-align: left;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+}
